@@ -13,8 +13,8 @@ def set_plot_params(font_family='serif',
                     xtick_width=1.5,
                     ytick_width=1.5,
                     axis_width=1.5,
-                    xtick_top=True,
-                    ytick_right=True,
+                    xtick_top=False,
+                    ytick_right=False,
                     xtick_minor_visible=False,
                     ytick_minor_visible=False,
                     xtick_minor_width=1.0,
@@ -43,8 +43,8 @@ def set_plot_params(font_family='serif',
     xtick_width : float, optional  x 轴主刻度线宽度, 默认值为 1.5.
     ytick_width : float, optional  y 轴主刻度线宽度, 默认值为 1.5.
     axis_width : float, optional  坐标轴线宽度, 默认值为 1.5.
-    xtick_top : bool, optional  是否在 x 轴顶部添加刻度线, 默认值为 True.
-    ytick_right : bool, optional  是否在 y 轴右侧添加刻度线, 默认值为 True.
+    xtick_top : bool, optional  是否在 x 轴顶部添加刻度线, 默认值为 False.
+    ytick_right : bool, optional  是否在 y 轴右侧添加刻度线, 默认值为 False.
     xtick_minor_visible : bool, optional  是否添加 x 轴次刻度线, 默认值为 False.
     ytick_minor_visible : bool, optional  是否添加 y 轴次刻度线, 默认值为 False.
     xtick_minor_width : float, optional  x 轴次刻度线宽度, 默认值为 1.0.
