@@ -1,6 +1,17 @@
 # spt
-sci plot template python script
+scientific matplotlib plot template python script.
 
-example:
+## Usage
+In your python script, import:
+```python
+from plot_params import set_plot_params
+
+...
+
+set_plot_params()
+
+```
+
+## Example:
 
 
