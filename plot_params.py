@@ -7,7 +7,7 @@ def set_plot_params(
     label_weight="heavy",
     title_weight="heavy",
     font_size=12,
-    legend_fontsize=10,
+    legend_fontsize=12,
     math_font="regular",
     xtick_dir="in",
     ytick_dir="in",
@@ -38,7 +38,7 @@ def set_plot_params(
     label_weight : str, optional  坐标轴标签加粗类型, 默认值为 'heavy'.
     title_weight : str, optional  图表标题加粗类型, 默认值为 'heavy'.
     font_size : int, optional  字体大小, 默认值为 12.
-    legend_fontsize: int, optional  图例字体大小, 默认值为 10.
+    legend_fontsize: int, optional  图例字体大小, 默认值为 12.
     math_font : str, optional  数学公式字体类型, 默认值为 'regular', 即非斜体.
     xtick_dir : str, optional  x 轴主刻度线方向, 默认值为 'in'.
     ytick_dir : str, optional  y 轴主刻度线方向, 默认值为 'in'.
