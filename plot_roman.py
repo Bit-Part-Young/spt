@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from plot_params import set_plot_params
+from plot_params_roman import set_plot_params
 
 
 x = np.linspace(0, 2 * np.pi, 100)
@@ -16,6 +16,6 @@ ax.set_xlabel("x")
 ax.set_ylabel("y")
 ax.legend()
 
-fig.savefig("sin.png")
+fig.savefig("sin-roman.png")
 
 print("figure is generated!")
