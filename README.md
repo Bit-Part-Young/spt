@@ -37,9 +37,11 @@ fig.savefig('sin.png')
 print("figure is generated!")
 ```
 
+---
+
 - Figure:
 
-![](./sin.png)
+![sin.png](./sin.png)
 
 
 ---
@@ -50,6 +52,7 @@ print("figure is generated!")
 - requirements:
 
 To use times new roman font, you need to do:
+
 ```bash
 # cp roman-ttf fonts to your matplotlib font path in your conda env
 cp roman-ttf/* <<conda_env>>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
@@ -88,6 +91,8 @@ fig.savefig("sin-roman.png")
 print("figure is generated!")
 ```
 
+---
+
 - Figure:
 
-![](./sin-roman.png)
+![sin-roman.png](./sin-roman.png)
