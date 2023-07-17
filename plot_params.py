@@ -75,7 +75,7 @@ def set_plot_params(
     "axes.prop_cycle": cycle, 设置默认颜色循环.
     "mathtext.default": 数学公式字体类型, "regular"为非斜体.
 
-    """    
+    """
 
     # 创建包含参数名称和对应值的字典
     params = {
@@ -117,7 +117,8 @@ def set_roman_plot_params(**kwargs):
     设置matplotlib的字体为Times New Roman.
 
     **kwargs: 可选参数, 与set_plot_params中的参数相同.
-    """    
+    """
+
     params = set_plot_params(**kwargs)
 
     params["font.family"] = "sans-serif"

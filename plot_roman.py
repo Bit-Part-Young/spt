@@ -1,12 +1,12 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from plot_params_roman import set_plot_params
+from plot_params import set_roman_plot_params
 
 
 x = np.linspace(0, 2 * np.pi, 100)
 y = np.sin(x)
 
-set_plot_params()
+set_roman_plot_params()
 
 fig, ax = plt.subplots()
 

@@ -1,10 +1,9 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from mpl_toolkits.mplot3d import Axes3D
-from plot_params_roman import set_plot_params
+from plot_params import set_roman_plot_params
 
 
-set_plot_params()
+set_roman_plot_params()
 
 np.random.seed(42)
 num_points = 100
