@@ -29,39 +29,39 @@ def set_plot_params(
     savefig_bbox="tight",
 ):
     """
-    该函数用于设置matplotlib绘图参数, 各个参数均为可选参数, 可以在函数调用时进行自定义修改.
+    设置matplotlib绘图参数.
 
-    Parameters
-    ----------
-    font_family : str, optional  字体类型, 默认值为 "serif".
-    font_weight : str, optional  字体加粗类型, 默认值为 "heavy".
-    axes_labelweight : str, optional  坐标轴标签加粗类型, 默认值为 "heavy".
-    axes_titleweight : str, optional  图表标题加粗类型, 默认值为 "heavy".
-    font_size : int, optional  字体大小, 默认值为 12.
-    legend_fontsize: int, optional  图例字体大小, 默认值为 12.
-    mathtext_fontset : str, optional  数学公式字体类型, 默认值为 "sitx", 即斜体.
-    xtick_direction : str, optional  x 轴主刻度线方向, 默认值为 "in".
-    ytick_direction : str, optional  y 轴主刻度线方向, 默认值为 "in".
-    xtick_major_width : float, optional  x 轴主刻度线宽度, 默认值为 1.5.
-    ytick_major_width : float, optional  y 轴主刻度线宽度, 默认值为 1.5.
-    axes_linewidth : float, optional  坐标轴线宽度, 默认值为 1.5.
-    xtick_top : bool, optional  是否在 x 轴顶部添加刻度线, 默认值为 False.
-    ytick_right : bool, optional  是否在 y 轴右侧添加刻度线, 默认值为 False.
-    xtick_minor_visible : bool, optional  是否添加 x 轴次刻度线, 默认值为 False.
-    ytick_minor_visible : bool, optional  是否添加 y 轴次刻度线, 默认值为 False.
-    xtick_minor_width : float, optional  x 轴次刻度线宽度, 默认值为 1.0.
-    ytick_minor_width : float, optional  y 轴次刻度线宽度, 默认值为 1.0.
-    xtick_major_pad : int, optional  x 轴主刻度线标签与刻度线的距离, 默认值为 7.
-    ytick_major_pad : int, optional  y 轴主刻度线标签与刻度线的距离, 默认值为 7.
-    axes_labelpad : int, optional  坐标轴标签与坐标轴的距离, 默认值为 10.
-    axes_titlepad : int, optional  标题与坐标轴的距离, 默认值为 10.
-    savefig_dpi : int, optional  图片保存时的分辨率, 默认值为 300.
-    figure_dpi : int, optional  图片显示时的分辨率, 默认值为 300.
-    savefig_bbox : str, optional  图片保存时的裁剪方式, 默认值为 "tight", 即裁剪掉图片周围的空白部分.
+    Args:
+        font_family (str, optional): 字体类型. Defaults to "serif".
+        font_weight (str, optional): 字体加粗类型. Defaults to "heavy".
+        axes_labelweight (str, optional): 坐标轴标签加粗类型. Defaults to "heavy".
+        axes_titleweight (str, optional): 图表标题加粗类型. Defaults to "heavy".
+        font_size (int, optional): 字体大小. Defaults to 12.
+        legend_fontsize (int, optional): 图例字体大小. Defaults to 12.
+        mathtext_fontset (str, optional): 数学公式字体类型. Defaults to "stix".
+        xtick_direction (str, optional): x 轴主刻度线方向. Defaults to "in".
+        ytick_direction (str, optional): y 轴主刻度线方向. Defaults to "in".
+        xtick_major_width (float, optional): x 轴主刻度线宽度. Defaults to 1.5.
+        ytick_major_width (float, optional): y 轴主刻度线宽度. Defaults to 1.5.
+        axes_linewidth (float, optional): 坐标轴线宽度. Defaults to 1.5.
+        xtick_top (bool, optional): 是否在 x 轴顶部添加刻度线. Defaults to False.
+        ytick_right (bool, optional): 是否在 y 轴顶部添加刻度线. Defaults to False.
+        xtick_minor_visible (bool, optional): 是否添加 x 轴次刻度线. Defaults to False.
+        ytick_minor_visible (bool, optional): 是否添加 y 轴次刻度线. Defaults to False.
+        xtick_minor_width (float, optional): x 轴次刻度线宽度. Defaults to 1.0.
+        ytick_minor_width (float, optional): y 轴次刻度线宽度. Defaults to 1.0.
+        xtick_major_pad (int, optional): x 轴主刻度线标签与刻度线的距离. Defaults to 7.
+        ytick_major_pad (int, optional): y 轴主刻度线标签与刻度线的距离. Defaults to 7.
+        axes_labelpad (int, optional): 坐标轴标签与坐标轴的距离. Defaults to 10.
+        axes_titlepad (int, optional): 标题与坐标轴的距离. Defaults to 10.
+        savefig_dpi (int, optional): 图片保存时的分辨率. Defaults to 300.
+        figure_dpi (int, optional): 图片显示时的分辨率. Defaults to 300.
+        savefig_bbox (str, optional): 图片保存时的裁剪方式, "tight"表示裁剪掉图片周围的空白部分. Defaults to "tight".
 
-    -------
-    
-    Returns:  None
+    Returns:
+        dict: matplotlib绘图参数dict.
+
+   -------
 
     其他可以补充的plt.rcParams
     "axes.grid": True/False, 设置是否显示坐标轴网格线.
@@ -74,7 +74,8 @@ def set_plot_params(
     "text.usetex": True/False, 设置是否使用TeX解析字符串中的LaTeX标记.
     "axes.prop_cycle": cycle, 设置默认颜色循环.
     "mathtext.default": 数学公式字体类型, "regular"为非斜体.
-    """
+
+    """    
 
     # 创建包含参数名称和对应值的字典
     params = {
@@ -106,4 +107,20 @@ def set_plot_params(
     }
 
     # 将参数设置到 rcParams 中
+    plt.rcParams.update(params)
+
+    return params
+
+
+def set_roman_plot_params(**kwargs):
+    """
+    设置matplotlib的字体为Times New Roman.
+
+    **kwargs: 可选参数, 与set_plot_params中的参数相同.
+    """    
+    params = set_plot_params(**kwargs)
+
+    params["font.family"] = "sans-serif"
+    params["font.sans-serif"] = ["Times New Roman"]
+
     plt.rcParams.update(params)
