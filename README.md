@@ -1,6 +1,6 @@
 # spt
 
-scientific matplotlib plot template python module(`plot_params.py` and `plot_params_roman.py`).
+scientific matplotlib plot template python module(`plot_params.py`).
 
 
 **Note: the module can't render chinese characters!!!**
