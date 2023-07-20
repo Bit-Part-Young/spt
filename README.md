@@ -146,3 +146,23 @@ print("Figure is generated!")
 - Figure:
 
 ![scatter-3d.png](./scatter-3d.png)
+
+
+
+## Examples
+
+- Figure 1:
+
+![subs-ene-Nb3Si-bar.png](assets/subs-ene-Nb3Si-bar.png)
+
+
+
+---
+
+
+
+- Figure 2:
+
+![b_fit_cal.png](assets/b_fit_cal.png)
+
+
