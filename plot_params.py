@@ -33,6 +33,7 @@ def set_plot_params(
     lines_markersize=10,
     axes3d_grid=True,
     axes_grid=False,
+    legend_handletextpad=0.8,
 ):
     """
     设置matplotlib绘图参数.
@@ -69,6 +70,7 @@ def set_plot_params(
         lines_markersize (int, optional): marker大小. Defaults to 10.
         axes3d_grid (bool, optional): 3D图是否显示网格线. Defaults to True.
         axes_grid (bool, optional): 2D图是否显示网格线. Defaults to False.
+        legend_handletextpad (float, optional): 图例标签与图例符号的距离. Defaults to 0.8.
 
     Returns:
         dict: matplotlib rcParams dict.
@@ -119,6 +121,7 @@ def set_plot_params(
         "lines.markersize": lines_markersize,
         "axes3d.grid": axes3d_grid,
         "axes.grid": axes_grid,
+        "legend.handletextpad": legend_handletextpad,
     }
 
     # update rcParams
