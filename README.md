@@ -12,7 +12,7 @@ scientific matplotlib plot template python module(`plot_params.py`).
 
 ## Usage
 
-### use plot_params.py
+### use set_plot_params function
 
 - plot test script:
   
@@ -50,7 +50,7 @@ print("figure is generated!")
 ---
 
 
-### use plot_params_roman.py
+### use set_roman_plot_params function
 
 - requirements:
 
