@@ -15,6 +15,7 @@ def set_plot_params(
     ytick_major_width=2.0,
     axes_linewidth=2.0,
     lines_linewidth=2.0,
+    lines_markersize=10,
     xtick_top=False,
     ytick_right=False,
     xtick_minor_visible=False,
@@ -29,11 +30,10 @@ def set_plot_params(
     figure_dpi=1000,
     savefig_bbox="tight",
     legend_labelspacing=0.5,
+    legend_handletextpad=0.8,
     legend_frameon=True,
-    lines_markersize=10,
     axes3d_grid=True,
     axes_grid=False,
-    legend_handletextpad=0.8,
 ):
     """
     设置matplotlib绘图参数.
@@ -52,6 +52,7 @@ def set_plot_params(
         ytick_major_width (float, optional): y 轴主刻度线宽度. Defaults to 2.0.
         axes_linewidth (float, optional): 坐标轴线宽度. Defaults to 2.0.
         lines_linewidth (float, optional): 线条宽度. Defaults to 2.0.
+        lines_markersize (int, optional): marker大小. Defaults to 10.
         xtick_top (bool, optional): 是否在 x 轴顶部添加刻度线. Defaults to False.
         ytick_right (bool, optional): 是否在 y 轴顶部添加刻度线. Defaults to False.
         xtick_minor_visible (bool, optional): 是否添加 x 轴次刻度线. Defaults to False.
@@ -66,11 +67,10 @@ def set_plot_params(
         figure_dpi (int, optional): 图片显示时的分辨率. Defaults to 1000.
         savefig_bbox (str, optional): 图片保存时的裁剪方式, "tight"表示裁剪掉图片周围的空白部分. Defaults to "tight".
         legend_labelspacing (float, optional): 图例标签间距. Defaults to 0.5.
+        legend_handletextpad (float, optional): 图例标签与图例符号的距离. Defaults to 0.8.
         legend_frameon (bool, optional): 图例是否显示边框. Defaults to True.
-        lines_markersize (int, optional): marker大小. Defaults to 10.
         axes3d_grid (bool, optional): 3D图是否显示网格线. Defaults to True.
         axes_grid (bool, optional): 2D图是否显示网格线. Defaults to False.
-        legend_handletextpad (float, optional): 图例标签与图例符号的距离. Defaults to 0.8.
 
     Returns:
         dict: matplotlib rcParams dict.
@@ -103,6 +103,7 @@ def set_plot_params(
         "ytick.major.width": ytick_major_width,
         "axes.linewidth": axes_linewidth,
         "lines.linewidth": lines_linewidth,
+        "lines.markersize": lines_markersize,
         "xtick.top": xtick_top,
         "ytick.right": ytick_right,
         "xtick.minor.visible": xtick_minor_visible,
@@ -117,11 +118,10 @@ def set_plot_params(
         "figure.dpi": figure_dpi,
         "savefig.bbox": savefig_bbox,
         "legend.labelspacing": legend_labelspacing,
+        "legend.handletextpad": legend_handletextpad,
         "legend.frameon": legend_frameon,
-        "lines.markersize": lines_markersize,
         "axes3d.grid": axes3d_grid,
         "axes.grid": axes_grid,
-        "legend.handletextpad": legend_handletextpad,
     }
 
     # update rcParams
