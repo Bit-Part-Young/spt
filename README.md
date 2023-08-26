@@ -14,6 +14,10 @@ scientific matplotlib plot template python module(`plot_params.py`).
 
 ### use set_plot_params function
 
+
+[plot.py](./plot.py)
+
+
 - plot test script:
   
 ```python
@@ -51,6 +55,10 @@ print("figure is generated!")
 
 
 ### use set_roman_plot_params function
+
+
+[plot_roman.py](./plot_roman.py)
+
 
 - requirements:
 
@@ -106,6 +114,10 @@ print("figure is generated!")
 
 
 - 3d plot test script:
+
+
+[plot_3d.py](./plot_3d.py)
+
 
 ```python
 import matplotlib.pyplot as plt
