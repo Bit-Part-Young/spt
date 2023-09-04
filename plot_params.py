@@ -139,7 +139,9 @@ def set_roman_plot_params(**kwargs):
 
     rcparams = set_plot_params(**kwargs)
 
-    rcparams["font.family"] = "sans-serif"
-    rcparams["font.sans-serif"] = "Times New Roman"
+    rcparams["font.serif"] = "Times New Roman"
+    # 或者
+    # rcparams["font.family"] = "sans-serif"
+    # rcparams["font.sans-serif"] = "Times New Roman"
 
     plt.rcParams.update(rcparams)
