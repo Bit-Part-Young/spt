@@ -3,5 +3,8 @@ __pycache__/
 
 examples/
 
-# figures
-*.png
+# example figures
+scatter-3d.png
+sin.png
+sin-zh.png
+sin-roman.png
