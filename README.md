@@ -2,10 +2,13 @@
 
 scientific matplotlib plot template python module(`plot_params.py`).
 
-
-
-
 ---
+
+## To do
+
+- [ ] 3D 图绘制三个轴标签显示不全
+- [ ] 将此 project 打包成 python package
+
 ---
 
 ## Usage
@@ -35,9 +38,6 @@ fig, ax = plt.subplots()
 
 ![sin.png](./assets/example-figures/sin.png)
 
-
-
----
 ---
 
 ### use set_roman_plot_params function
@@ -85,7 +85,6 @@ fig, ax = plt.subplots()
 
 [plot_3d.py](./plot_3d.py)
 
-
 ```python
 from mpl_toolkits.mplot3d import Axes3D
 from plot_params import set_roman_plot_params
@@ -110,15 +109,11 @@ fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(15, 8))
 
 ![scatter-3d.png](./assets/example-figures/scatter-3d.png)
 
-
-
----
 ---
 
 ### Chinese characters plot
 
 [plot_zh.py](./plot_zh.py)
-
 
 - requirements:
 
@@ -136,6 +131,7 @@ rm -rf ~/.cache/matplotlib
 ```
 
 `matplotlibrc` modification:
+
 ```bash
 # origin 
 #font.family:  sans-serif
@@ -154,6 +150,7 @@ font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, L
 axes.unicode_minus: False  # use Unicode for the minus symbol rather than hyphen.  See
 ```
 
+---
 
 - plot test script:
 
@@ -185,9 +182,6 @@ ax.legend(prop={'family': 'SimHei'})
 
 ![sin-zh.png](./assets/example-figures/sin-zh.png)
 
-
-
----
 ---
 
 ## Scientific figure examples
@@ -201,4 +195,3 @@ ax.legend(prop={'family': 'SimHei'})
 - Figure 2:
 
 ![b_fit_cal.png](./assets/b_fit_cal.png)
-
