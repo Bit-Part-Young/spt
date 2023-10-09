@@ -11,8 +11,9 @@ git clone https://gitee.com/yangsl306/spt.git
 cd spt
 
 # install
-python setup.py install
-# python setup.py install --user
+# --user argument will normally install packages to ~/.local
+python setup.py install --user
+# python setup.py install
 ```
 
 ---
