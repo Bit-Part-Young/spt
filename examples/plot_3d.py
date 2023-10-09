@@ -26,6 +26,6 @@ ax.set_ylabel("Y axis")
 ax.set_zlabel("Z axis")
 ax.legend()
 
-fig.savefig("scatter-3d.png")
+fig.savefig("scatter_3d.png")
 
 print("Figure is generated!")

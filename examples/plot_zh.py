@@ -22,6 +22,6 @@ ax.set_ylabel("y")
 ax.legend(prop={"family": "SimHei"})
 
 
-fig.savefig("sin-zh.png")
+fig.savefig("sin_zh.png")
 
 print("figure is generated!")

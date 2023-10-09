@@ -15,6 +15,6 @@ ax.set_xlabel("x")
 ax.set_ylabel("y")
 ax.legend()
 
-fig.savefig("sin-roman.png")
+fig.savefig("sin_roman.png")
 
 print("figure is generated!")
