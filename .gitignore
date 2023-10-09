@@ -4,8 +4,10 @@ __pycache__/
 tmp/
 
 # example figures
-./*.png
-./*.jpg
+*.png
+*.jpg
+examples/*.png
+examples/*.jpg
 
 # setup.py
 dist/
