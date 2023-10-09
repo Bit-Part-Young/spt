@@ -12,6 +12,7 @@ cd spt
 
 # install
 python setup.py install
+# python setup.py install --user
 ```
 
 ---
@@ -27,7 +28,7 @@ python setup.py install
 
 ### use set_plot_params function
 
-[plot.py](./plot.py)
+[plot.py](./examples/plot.py)
 
 - plot:
 
@@ -89,13 +90,13 @@ fig, ax = plt.subplots()
 
 - Figure:
 
-![sin-roman.png](./assets/example-figures/sin-roman.png)
+![sin_roman.png](./assets/example-figures/sin_roman.png)
 
 ---
 
 - 3d plot:
 
-[plot_3d.py](./plot_3d.py)
+[plot_3d.py](./examples/plot_3d.py)
 
 ```python
 from mpl_toolkits.mplot3d import Axes3D
@@ -119,13 +120,13 @@ fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(15, 8))
 
 - Figure:
 
-![scatter-3d.png](./assets/example-figures/scatter-3d.png)
+![scatter_3d.png](./assets/example-figures/scatter_3d.png)
 
 ---
 
 ### Chinese characters plot
 
-[plot_zh.py](./plot_zh.py)
+[plot_zh.py](./examples/plot_zh.py)
 
 - requirements:
 
@@ -192,7 +193,7 @@ ax.legend(prop={"family": "SimHei"})
 
 - Figure
 
-![sin-zh.png](./assets/example-figures/sin-zh.png)
+![sin_zh.png](./assets/example-figures/sin_zh.png)
 
 ---
 
