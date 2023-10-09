@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from plot_params import set_roman_plot_params
 
-
 x = np.linspace(0, 2 * np.pi, 100)
 y = np.sin(x)
 
@@ -20,7 +19,7 @@ ax.set_ylabel("y")
 # ax.set_ylabel("y 轴", fontproperties="SimHei")
 
 # legend 设置simhei字体
-ax.legend(prop={'family': 'SimHei'})
+ax.legend(prop={"family": "SimHei"})
 
 
 fig.savefig("sin-zh.png")
