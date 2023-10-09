@@ -8,3 +8,8 @@ scatter-3d.png
 sin.png
 sin-zh.png
 sin-roman.png
+
+# setup.py
+dist/
+build/
+*.egg-info/
