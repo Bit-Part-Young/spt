@@ -1,13 +1,11 @@
 # python cache
 __pycache__/
 
-examples/
+tmp/
 
 # example figures
-scatter-3d.png
-sin.png
-sin-zh.png
-sin-roman.png
+./*.png
+./*.jpg
 
 # setup.py
 dist/
