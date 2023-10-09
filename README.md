@@ -49,7 +49,7 @@ fig, ax = plt.subplots()
 
 - Figure:
 
-![sin.png](./assets/example-figures/sin.png)
+![sin.png](./assets/sin.png)
 
 ---
 
@@ -90,7 +90,7 @@ fig, ax = plt.subplots()
 
 - Figure:
 
-![sin_roman.png](./assets/example-figures/sin_roman.png)
+![sin_roman.png](./assets/sin_roman.png)
 
 ---
 
@@ -120,7 +120,7 @@ fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(15, 8))
 
 - Figure:
 
-![scatter_3d.png](./assets/example-figures/scatter_3d.png)
+![scatter_3d.png](./assets/scatter_3d.png)
 
 ---
 
@@ -193,7 +193,7 @@ ax.legend(prop={"family": "SimHei"})
 
 - Figure
 
-![sin_zh.png](./assets/example-figures/sin_zh.png)
+![sin_zh.png](./assets/sin_zh.png)
 
 ---
 
