@@ -1,13 +1,25 @@
 # spt
 
-scientific matplotlib plot template python module(`plot_params.py`).
+scientific matplotlib plot template python module.
+
+---
+
+## Installation
+
+```bash
+git clone https://gitee.com/yangsl306/spt.git
+cd spt
+
+# install
+python setup.py install
+```
 
 ---
 
 ## To do
 
 - [ ] 3D 图绘制三个轴标签显示不全
-- [ ] 将此 project 打包成 python package
+- [ ] 完善 `setup.py` 安装脚本
 
 ---
 
@@ -170,7 +182,7 @@ ax.plot(x, y, label="正弦函数")
 # ax.set_ylabel("y 轴", fontproperties="SimHei")
 
 # legend 设置simhei字体
-ax.legend(prop={'family': 'SimHei'})
+ax.legend(prop={"family": "SimHei"})
 
 ...
 
