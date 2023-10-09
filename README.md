@@ -55,7 +55,7 @@ fig, ax = plt.subplots()
 
 ### use set_roman_plot_params function
 
-[plot_roman.py](./plot_roman.py)
+[plot_roman.py](./examples/plot_roman.py)
 
 - requirements:
 
@@ -201,7 +201,7 @@ ax.legend(prop={"family": "SimHei"})
 
 - Figure 1:
 
-![subs-ene-Nb3Si-bar.png](./assets/subs-ene-Nb3Si-bar.png)
+![subs_ene_Nb3Si_bar.png](./assets/subs_ene_Nb3Si_bar.png)
 
 ---
 
