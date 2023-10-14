@@ -3,6 +3,9 @@ __pycache__/
 
 tmp/
 
+test.py
+test.sh
+
 # example figures
 /*.png
 /*.jpg
