@@ -12,20 +12,14 @@ Note: Please install matplotlib package first.
 git clone https://gitee.com/yangsl306/spt.git
 cd spt
 
-# install
 pip install .
-
-# or
-# --user argument will normally install packages to ~/.local
-python setup.py install --user
-# python setup.py install
 ```
 
 ---
 
 ## To do
 
-- [ ] 安装 spt package 后，使用 `fig, ax = plt.subplots()` 命令，VSCode 的 Pylance 插件无法自动识别`ax` 对象的属性和方法原因未知
+- [ ] 安装 spt package 后，使用 `fig, ax = plt.subplots()` 命令，VSCode 的 Pylance 插件无法自动识别`ax` 对象的属性和方法，原因未知
 - [ ] 3D 图绘制三个轴标签显示不全
 - [x] 完善 `setup.py` 安装脚本
 
