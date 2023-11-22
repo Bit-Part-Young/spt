@@ -9,5 +9,5 @@ setup(
     url="https://gitee.com/yangsl306/spt",
     packages=find_packages(),
     install_requires=["matplotlib"],
-    py_modules=["plot_params"],
+    # py_modules=["plot_params"],
 )
