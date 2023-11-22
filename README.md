@@ -13,6 +13,8 @@ git clone https://gitee.com/yangsl306/spt.git
 cd spt
 
 pip install .
+# or 
+pip install -r requirements.txt
 ```
 
 ---
