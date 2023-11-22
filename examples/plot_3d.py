@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from plot_params import set_roman_plot_params
+from spt.plot_params import set_roman_plot_params
 
 set_roman_plot_params(
     axes_labelpad=15,
