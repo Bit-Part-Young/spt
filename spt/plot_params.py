@@ -1,4 +1,5 @@
 from typing import Dict
+
 from matplotlib import rcParams
 
 
