@@ -6,8 +6,6 @@ Scientific matplotlib plot template python module.
 
 ## Installation
 
-Note: Please install matplotlib package first.
-
 ```bash
 git clone https://gitee.com/yangsl306/spt.git
 cd spt
