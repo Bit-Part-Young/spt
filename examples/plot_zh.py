@@ -10,17 +10,13 @@ set_roman_plot_params()
 fig, ax = plt.subplots()
 
 ax.plot(x, y, label="正弦函数")
-# ax.plot(x, y, label="$y=\sin(x)$")
 
+# x y 轴标签 字体设置为 SimHei
 ax.set_xlabel("x")
 ax.set_ylabel("y")
-# x y轴标签 字体设置为SimHei
-# ax.set_xlabel("x 轴", fontproperties="SimHei")
-# ax.set_ylabel("y 轴", fontproperties="SimHei")
 
-# legend 设置simhei字体
+# legend 字体设置 SimHei
 ax.legend(prop={"family": "SimHei"})
-
 
 fig.savefig("sin_zh.png")
 

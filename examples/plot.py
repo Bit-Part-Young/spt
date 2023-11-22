@@ -17,4 +17,4 @@ ax.legend()
 
 fig.savefig("sin.png")
 
-print("figure is generated!")
+print("\nFigure is generated!")

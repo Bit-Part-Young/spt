@@ -22,10 +22,10 @@ ax.scatter(x, y, z, c="b", marker="o", label=r"$a \, · \, b  \, · \, 10^{-5}$"
 
 ax.set_xlabel("X axis")
 ax.set_ylabel("Y axis")
-# TODO: z轴的label无法正常显示 待解决
+# TODO: z 轴的 label无法正常显示 待解决
 ax.set_zlabel("Z axis")
 ax.legend()
 
 fig.savefig("scatter_3d.png")
 
-print("Figure is generated!")
+print("\nFigure is generated!")
