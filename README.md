@@ -6,11 +6,16 @@ scientific matplotlib plot template python module.
 
 ## Installation
 
+Note: Please install matplotlib package first.
+
 ```bash
 git clone https://gitee.com/yangsl306/spt.git
 cd spt
 
 # install
+pip install .
+
+# or
 # --user argument will normally install packages to ~/.local
 python setup.py install --user
 # python setup.py install
@@ -20,8 +25,9 @@ python setup.py install --user
 
 ## To do
 
+- [ ] 安装 spt package 后，使用 `fig, ax = plt.subplots()` 命令，VSCode 的 Pylance 插件无法自动识别`ax` 对象的属性和方法原因未知
 - [ ] 3D 图绘制三个轴标签显示不全
-- [ ] 完善 `setup.py` 安装脚本
+- [x] 完善 `setup.py` 安装脚本
 
 ---
 
@@ -34,7 +40,7 @@ python setup.py install --user
 - plot:
 
 ```python
-from plot_params import set_plot_params
+from spt.plot_params import set_plot_params
 
 ...
 
@@ -75,7 +81,7 @@ rm -rf ~/.cache/matplotlib
 - plot:
 
 ```python
-from plot_params import set_roman_plot_params
+from spt.plot_params import set_roman_plot_params
 
 ...
 
@@ -101,7 +107,7 @@ fig, ax = plt.subplots()
 
 ```python
 from mpl_toolkits.mplot3d import Axes3D
-from plot_params import set_roman_plot_params
+from spt.plot_params import set_roman_plot_params
 
 ...
 
@@ -169,7 +175,7 @@ axes.unicode_minus: False  # use Unicode for the minus symbol rather than hyphen
 - plot test script:
 
 ```python
-from plot_params import set_roman_plot_params
+from spt.plot_params import set_roman_plot_params
 
 ...
 
@@ -179,11 +185,11 @@ fig, ax = plt.subplots()
 
 ax.plot(x, y, label="正弦函数")
 
-# x y轴标签 字体设置为SimHei
+# x y 轴标签 字体设置为 SimHei
 # ax.set_xlabel("x 轴", fontproperties="SimHei")
 # ax.set_ylabel("y 轴", fontproperties="SimHei")
 
-# legend 设置simhei字体
+# legend 字体设置为 SimHei
 ax.legend(prop={"family": "SimHei"})
 
 ...
