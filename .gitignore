@@ -3,18 +3,19 @@ __pycache__/
 
 # temporary files and directories
 tmp/
-test.py
-test.sh
+test*.py
+test*.sh
 
 # backuped files
 *bk*.*
-
 
 # example figures
 /*.png
 /*.jpg
 /examples/*.png
 /examples/*.jpg
+/examples/*/*.png
+/examples/*/*.jpg
 
 # setup.py
 dist/
