@@ -30,6 +30,7 @@ Full example codes can be found in [examples](./examples) folder.
 - plot:
 
 ```python
+import matplotlib.pyplot as plt
 from spt.plot_params import set_plot_params
 
 ...
@@ -71,6 +72,7 @@ rm -rf ~/.cache/matplotlib
 - plot:
 
 ```python
+import matplotlib.pyplot as plt
 from spt.plot_params import set_roman_plot_params
 
 ...
@@ -96,18 +98,19 @@ fig, ax = plt.subplots()
 [plot_3d.py](./examples/plot_3d.py)
 
 ```python
-from mpl_toolkits.mplot3d import Axes3D
+import matplotlib.pyplot as plt
 from spt.plot_params import set_roman_plot_params
 
 ...
 
 set_roman_plot_params(
     axes_labelpad=15,
-    legend_fontsize=22,
     legend_handletextpad=0.0,
+    legend_fontsize=22,
+    savefig_bbox="standard",
 )
 
-fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(15, 8))
+fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(10, 8))
 
 ...
 
@@ -159,6 +162,7 @@ axes.unicode_minus: False  # use Unicode for the minus symbol rather than hyphen
 - plot:
 
 ```python
+import matplotlib.pyplot as plt
 from spt.plot_params import set_roman_plot_params
 
 ...
@@ -169,8 +173,7 @@ fig, ax = plt.subplots()
 
 ax.plot(x, y, label="正弦函数")
 
-ax.set_xlabel("x")
-ax.set_ylabel("y")
+ax.set(xlabel="x", ylabel="y")
 
 # legend 字体设置为 SimHei
 ax.legend(prop={"family": "SimHei"})
@@ -187,7 +190,7 @@ ax.legend(prop={"family": "SimHei"})
 
 ---
 
-## Scientific figure examples
+## Scientific Figure Examples
 
 - Figure 1:
 
@@ -206,5 +209,5 @@ scripts: [b_fit_cal.py](./examples/fit-cal-b-plot/b_fit_cal.py)
 ## To do
 
 - [x] 完善 `setup.py` 安装脚本
-- [x] 3D 图绘制 z 轴标签显示不全（`"savefig.bbox"` 参数设为 `"tight"` 时，会出现这种情况，需设为 `"standard"`，多余空白需自己后处理掉；jupyter notebook 中 z 轴标签仍显示不全）
+- [x] 3D 图绘制 z 轴标签显示不全（`"savefig.bbox"` 参数设为 `"tight"` 时，会出现这种情况，需设为 `"standard"`，多余空白需自己后处理掉；**jupyter notebook 中 z 轴标签仍显示不全**）
 - [x] 安装 spt package 后，使用 `fig, ax = plt.subplots()` 命令，VSCode 的 Pylance 插件无法自动识别 `ax` 对象的属性和方法（matplotlib 3.8 版本的问题，需将 matplotlib 版本降到 3.8 以下）
