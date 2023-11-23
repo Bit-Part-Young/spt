@@ -17,15 +17,11 @@ pip install -r requirements.txt
 
 ---
 
-## To do
+## Usage
 
-- [ ] 3D 图绘制三个轴标签显示不全
-- [x] 完善 `setup.py` 安装脚本
-- [x] 安装 spt package 后，使用 `fig, ax = plt.subplots()` 命令，VSCode 的 Pylance 插件无法自动识别 `ax` 对象的属性和方法（matplotlib 3.8 版本的问题，需将 matplotlib 版本降到 3.8 以下）
+Full example codes can be found in [examples](./examples) folder.
 
 ---
-
-## Usage
 
 ### set_plot_params()
 
@@ -202,3 +198,11 @@ ax.legend(prop={"family": "SimHei"})
 - Figure 2:
 
 ![b_fit_cal.png](./assets/b_fit_cal.png)
+
+---
+
+## To do
+
+- [x] 完善 `setup.py` 安装脚本
+- [x] 3D 图绘制 z 轴标签显示不全（`"savefig.bbox"` 参数设为 `"tight"` 时，会出现这种情况，需设为 `"standard"`，多余空白需自己后处理掉；jupyter notebook 中 z 轴标签仍显示不全）
+- [x] 安装 spt package 后，使用 `fig, ax = plt.subplots()` 命令，VSCode 的 Pylance 插件无法自动识别 `ax` 对象的属性和方法（matplotlib 3.8 版本的问题，需将 matplotlib 版本降到 3.8 以下）
