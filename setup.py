@@ -6,8 +6,8 @@ from setuptools import find_packages
 
 THIS_DIR = Path(__file__).parent
 
-with open(THIS_DIR / "README.md", encoding="utf-8") as f:
-    long_description = f.read()
+# with open(THIS_DIR / "README.md", encoding="utf-8") as f:
+#     long_description = f.read()
 
 
 def read_requirements(filepath: Path) -> List[str]:
@@ -18,13 +18,14 @@ def read_requirements(filepath: Path) -> List[str]:
             if not package.startswith("#")
         ]
 
+
 requirements = read_requirements(THIS_DIR / "requirements.txt")
 
 
 setup(
     name="spt",
-    version="0.1.6",
-    description="Scientific matplotlib plot template python module.",
+    version="0.1.7",
+    description="Scientific matplotlib plot rcParams configuration template python package.",
     author="yangsl",
     author_email="3304839708@qq.com",
     url="https://gitee.com/yangsl306/spt",
