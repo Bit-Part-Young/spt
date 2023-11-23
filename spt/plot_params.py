@@ -36,6 +36,7 @@ def set_plot_params(
     legend_frameon: bool = True,
     axes3d_grid: bool = True,
     axes_grid: bool = False,
+    image_aspect: str = "equal",
 ) -> Dict:
     """
     设置 matplotlib 绘图参数.
@@ -73,6 +74,7 @@ def set_plot_params(
         legend_frameon (bool, optional): 图例是否显示边框. Defaults: True.
         axes3d_grid (bool, optional): 3D 图是否显示网格线. Defaults: True.
         axes_grid (bool, optional): 2D 图是否显示网格线. Defaults: False.
+        image_aspect (str, optional): 图片显示时的长宽比. Defaults: "equal".
 
     Returns:
         Dict: matplotlib rcParams dict.
@@ -123,6 +125,7 @@ def set_plot_params(
         "legend.frameon": legend_frameon,
         "axes3d.grid": axes3d_grid,
         "axes.grid": axes_grid,
+        "image.aspect": image_aspect,
     }
 
     # update rcParams
