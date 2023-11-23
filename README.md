@@ -197,6 +197,8 @@ ax.legend(prop={"family": "SimHei"})
 
 - Figure 2:
 
+scripts: [b_fit_cal.py](./examples/fit-cal-b-plot/b_fit_cal.py)
+
 ![b_fit_cal.png](./assets/b_fit_cal.png)
 
 ---
