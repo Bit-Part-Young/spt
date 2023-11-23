@@ -6,6 +6,14 @@ Scientific matplotlib plot rcParams configuration template python package.
 
 ## Installation
 
+Installation via git:
+
+```bash
+pip install git+https://gitee.com/yangsl306/spt.git
+```
+
+Installation via source code:
+
 ```bash
 git clone https://gitee.com/yangsl306/spt.git
 cd spt
