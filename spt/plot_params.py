@@ -37,6 +37,7 @@ def set_plot_params(
     axes3d_grid: bool = True,
     axes_grid: bool = False,
     image_aspect: str = "equal",
+    **kwargs
 ) -> Dict:
     """
     设置 matplotlib 绘图参数.
@@ -127,6 +128,9 @@ def set_plot_params(
         "axes.grid": axes_grid,
         "image.aspect": image_aspect,
     }
+
+    # update rcParams_dict
+    rcParams_dict.update(kwargs)
 
     # update rcParams
     rcParams.update(rcParams_dict)
