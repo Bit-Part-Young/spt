@@ -133,10 +133,15 @@ fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(10, 8))
 To use Chinese(SimHei 黑体) font, you need to do:
 
 ```bash
-# copy SimHei-ttf fonts to your matplotlib font path in specific conda env
+# copy SimHei-ttf fonts to matplotlib font path in specific conda env
 cp chinese-config/chinese-ttf/* <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
 
 # backup matplotlibrc file
+cd <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/
+cp matplotlibrc matplotlibrc_origin
+cd -
+
+# copy modified matplotlibrc file
 cp chinese-config/matplotlibrc <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/
 
 # remove matplotlib cache
