@@ -1,10 +1,14 @@
 # python cache
 __pycache__/
 
+# temporary files and directories
 tmp/
-
 test.py
 test.sh
+
+# backuped files
+*bk*.*
+
 
 # example figures
 /*.png
