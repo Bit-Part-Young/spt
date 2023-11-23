@@ -1,6 +1,6 @@
 # spt
 
-Scientific matplotlib plot template python module.
+Scientific matplotlib plot rcParams configuration template python package.
 
 ---
 
@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-### use set_plot_params function
+### set_plot_params()
 
 [plot.py](./examples/plot.py)
 
@@ -54,17 +54,17 @@ fig, ax = plt.subplots()
 
 ---
 
-### use set_roman_plot_params function
+### set_roman_plot_params()
 
 [plot_roman.py](./examples/plot_roman.py)
 
 - requirements:
 
-To use times new roman font, you need to do:
+To use Times New Roman font, you need to do:
 
 ```bash
-# cp roman-ttf fonts to your matplotlib font path in your conda env
-cp roman-ttf/* <<conda_env>>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
+# copy roman-ttf fonts to your matplotlib font path in specific conda env
+cp roman-ttf/* <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
 
 # remove matplotlib cache
 rm -rf ~/.cache/matplotlib
@@ -131,14 +131,14 @@ fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(15, 8))
 
 - requirements:
 
-To use chinese(SimHei 黑体) font, you need to do:
+To use Chinese(SimHei 黑体) font, you need to do:
 
 ```bash
-# cp SimHei-ttf fonts to your matplotlib font path in your conda env
-cp chinese-config/chinese-ttf/* <<conda_env>>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
+# copy SimHei-ttf fonts to your matplotlib font path in specific conda env
+cp chinese-config/chinese-ttf/* <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
 
-# you need to backup matplotlibrc file first
-cp chinese-config/matplotlibrc <<conda_env>>/lib/pythonXXX/site-packages/matplotlib/mpl-data/
+# backup matplotlibrc file
+cp chinese-config/matplotlibrc <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/
 
 # remove matplotlib cache
 rm -rf ~/.cache/matplotlib
@@ -148,25 +148,19 @@ rm -rf ~/.cache/matplotlib
 
 ```bash
 # origin 
-#font.family:  sans-serif
-
-#font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
-
-#axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
-
----
+font.family:  sans-serif
+font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
 
 # modification
 font.family:  sans-serif
-
 font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif, SimHei, Times New Roman, Times
-
 axes.unicode_minus: False  # use Unicode for the minus symbol rather than hyphen.  See
 ```
 
 ---
 
-- plot test script:
+- plot:
 
 ```python
 from spt.plot_params import set_roman_plot_params
@@ -179,9 +173,8 @@ fig, ax = plt.subplots()
 
 ax.plot(x, y, label="正弦函数")
 
-# x y 轴标签 字体设置为 SimHei
-# ax.set_xlabel("x 轴", fontproperties="SimHei")
-# ax.set_ylabel("y 轴", fontproperties="SimHei")
+ax.set_xlabel("x")
+ax.set_ylabel("y")
 
 # legend 字体设置为 SimHei
 ax.legend(prop={"family": "SimHei"})
