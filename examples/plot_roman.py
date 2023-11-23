@@ -11,8 +11,7 @@ fig, ax = plt.subplots()
 
 ax.plot(x, y, label="$y=\sin(x)$")
 
-ax.set_xlabel("x")
-ax.set_ylabel("y")
+ax.set(xlabel="x", ylabel="y")
 ax.legend()
 
 fig.savefig("sin_roman.png")

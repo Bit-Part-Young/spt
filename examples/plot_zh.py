@@ -11,13 +11,10 @@ fig, ax = plt.subplots()
 
 ax.plot(x, y, label="正弦函数")
 
-# x y 轴标签 字体设置为 SimHei
-ax.set_xlabel("x")
-ax.set_ylabel("y")
-
+ax.set(xlabel="x", ylabel="y")
 # legend 字体设置 SimHei
 ax.legend(prop={"family": "SimHei"})
 
 fig.savefig("sin_zh.png")
 
-print("figure is generated!")
+print("\nFigure is generated!")

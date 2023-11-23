@@ -90,7 +90,7 @@ def set_plot_params(
 
     """
 
-    rcparams_dict = {
+    rcParams_dict = {
         "font.family": font_family,
         "font.weight": font_weight,
         "axes.labelweight": axes_labelweight,
@@ -126,9 +126,9 @@ def set_plot_params(
     }
 
     # update rcParams
-    rcParams.update(rcparams_dict)
+    rcParams.update(rcParams_dict)
 
-    return rcparams_dict
+    return rcParams_dict
 
 
 def set_roman_plot_params(**kwargs) -> None:
@@ -138,8 +138,8 @@ def set_roman_plot_params(**kwargs) -> None:
     **kwargs: 可选参数, 与 set_plot_params() 中的参数相同.
     """
 
-    rcparams_dict = set_plot_params(**kwargs)
+    rcParams_dict = set_plot_params(**kwargs)
 
-    rcparams_dict["font.serif"] = "Times New Roman"
+    rcParams_dict["font.serif"] = "Times New Roman"
 
-    rcParams.update(rcparams_dict)
+    rcParams.update(rcParams_dict)
