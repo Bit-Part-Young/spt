@@ -2,8 +2,8 @@
 
 Scientific matplotlib plot rcParams configuration template python package.
 
-- Repo: [https://gitee.com/yangsl306/spt](https://gitee.com/yangsl306/spt)
-- Full documentation: [README.md](https://gitee.com/yangsl306/spt/README.md)
+- **Repo**: [https://gitee.com/yangsl306/spt](https://gitee.com/yangsl306/spt)
+- **Full documentation**: [README.md](https://gitee.com/yangsl306/spt/README.md)
 
 ---
 
@@ -33,6 +33,12 @@ pip install -r requirements.txt
 
 # editable mode
 pip install -e .
+```
+
+- update:
+
+```bash
+pip install -U spt
 ```
 
 ---
@@ -114,6 +120,8 @@ cp chinese-config/matplotlibrc <conda_env>/lib/pythonXXX/site-packages/matplotli
 # remove matplotlib cache
 rm -rf ~/.cache/matplotlib
 ```
+
+---
 
 `matplotlibrc` modification:
 
