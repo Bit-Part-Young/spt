@@ -3,22 +3,21 @@ import numpy as np
 import pandas as pd
 from spt.plot_params import set_plot_params, set_roman_plot_params
 
+set_roman_plot_params()
+
+fig, ax = plt.subplots()
+
 subs_ene_fn = "subs_ene_Nb3Si.csv"
 subs_ene_df = pd.read_csv(subs_ene_fn, sep=" ")
 
 equi_site_list = ["Nb_I", "Nb_II", "Nb_III", "Si_I"]
 label_list = ["Nb_{I}", "Nb_{II}", "Nb_{III}", "Si_{I}"]
 
-
-set_roman_plot_params()
-
-fig, ax = plt.subplots()
-
 bar_width = 0.4
 bar_gap = 0.2
 
 
-def pha_sta_ene_plot():
+def phase_stability_plot():
     # markers = ["o", "s", "^", "v"]
     solute_list = subs_ene_df.loc[
         subs_ene_df["solute_site"] == "Nb_I", "solute"
@@ -43,15 +42,11 @@ def pha_sta_ene_plot():
 
     ax.set(
         ylim=(-0.5, 5.0),
-        xticklabels=solute_list,
         xlabel="Alloying Elements",
         ylabel="$\mathrm{E_{SS}}$ (eV)",
     )
 
-    # ax.set_ylim(-0.5, 5.0)
-    # ax.set_xticks(x_data, solute_list)
-    # ax.set_xlabel("Alloying Elements")
-    # ax.set_ylabel("$\mathrm{E_{SS}}$ (eV)")
+    ax.set_xticks(x_data, solute_list)
     ax.legend()
 
     fig.savefig("substitution_energy_Nb3Si.png")
@@ -60,18 +55,4 @@ def pha_sta_ene_plot():
 
 
 if __name__ == "__main__":
-    pha_sta_ene_plot()
-
-    # latt_cha_list = ["lattice_a(Ang)", "lattice_b(Ang)", "lattice_c(Ang)"]
-    # for latt_cha in latt_cha_list:
-    #     subs_latt_plt(latt_cha=latt_cha)
-
-    #     plt.cla()
-
-    #     print("Figure is generated.")
-    # latt_cha = "lattice_a(Ang)"
-    # latt_cha = "lattice_b(Ang)"
-    # latt_cha = "lattice_c(Ang)"
-    # subs_latt_plt(latt_cha=latt_cha)
-
-    # print("Figure is generated.")
+    phase_stability_plot()
