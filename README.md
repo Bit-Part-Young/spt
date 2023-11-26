@@ -13,6 +13,9 @@ Scientific matplotlib plot rcParams configuration template python package.
 
 ```bash
 pip install spt
+
+# update
+pip install -U spt
 ```
 
 - via git:
@@ -33,12 +36,6 @@ pip install -r requirements.txt
 
 # editable mode
 pip install -e .
-```
-
-- update:
-
-```bash
-pip install -U spt
 ```
 
 ---
