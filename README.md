@@ -225,15 +225,21 @@ ax.legend(prop={"family": "SimHei"})
 
 ## Scientific Figure Examples
 
-- Figure 1:
+- Example 1:
 
-![subs_ene_Nb3Si_bar.png](./assets/subs_ene_Nb3Si_bar.png)
+scripts: [phase_stability_Nb3Si_plot.py](./examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py)
+
+Figure:
+
+![substitution_energy_Nb3Si.png](./assets/substitution_energy_Nb3Si.png)
 
 ---
 
-- Figure 2:
+- Example 2:
 
 scripts: [b_fit_cal.py](./examples/fit-cal-b-plot/b_fit_cal.py)
+
+Figure:
 
 ![b_fit_cal.png](./assets/b_fit_cal.png)
 
