@@ -1,3 +1,6 @@
+[![PyPi](https://img.shields.io/pypi/v/spt)](https://pypi.org/project/spt/)
+[![Downloads](https://img.shields.io/pypi/dm/spt)](https://pypi.org/project/spt)
+
 # spt
 
 Scientific matplotlib plot rcParams configuration template python package.
