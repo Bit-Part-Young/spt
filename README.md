@@ -1,5 +1,6 @@
 [![PyPi](https://img.shields.io/pypi/v/spt.svg)](https://pypi.org/project/spt/)
-[![PyPI Downloads](https://img.shields.io/pypi/dm/spt.svg)](https://pypi.org/project/spt)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/spt?logo=pypi&logoColor=white&color=blue&label=PyPI)](https://pypi.org/project/spt)
+[![Requires Python 3.6+](https://img.shields.io/badge/Python-3.6+-blue.svg?logo=python&logoColor=white)](https://python.org/downloads)
 
 # spt
 
