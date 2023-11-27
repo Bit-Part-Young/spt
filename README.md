@@ -1,5 +1,5 @@
-[![PyPi](https://img.shields.io/pypi/v/spt)](https://pypi.org/project/spt/)
-[![Downloads](https://img.shields.io/pypi/dm/spt)](https://pypi.org/project/spt)
+[![PyPi](https://img.shields.io/pypi/v/spt.svg)](https://pypi.org/project/spt/)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/spt.svg)](https://pypi.org/project/spt)
 
 # spt
 
