@@ -54,14 +54,14 @@ pip install -e .
 
 ## Usage
 
-Full example codes can be found in [examples](./examples) folder.
+Full example codes can be found in [examples](https://github.com/Bit-Part-Young/spt/tree/master/examples) folder.
 
 ---
 
 ### set_plot_params()
 
-<!-- [plot.py](./examples/plot.py) -->
-[plot.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot.py)
+<!-- script: [plot.py](./examples/plot.py) -->
+script: [plot.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot.py)
 
 - plot:
 
@@ -90,8 +90,8 @@ fig, ax = plt.subplots()
 
 ### set_roman_plot_params()
 
-<!-- [plot_roman.py](./examples/plot_roman.py) -->
-[plot_roman.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_roman.py)
+<!-- script: [plot_roman.py](./examples/plot_roman.py) -->
+script: [plot_roman.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_roman.py)
 
 - requirements:
 
@@ -134,8 +134,8 @@ fig, ax = plt.subplots()
 
 - 3d plot:
 
-<!-- [plot_3d.py](./examples/plot_3d.py) -->
-[plot_3d.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_3d.py)
+<!-- script: [plot_3d.py](./examples/plot_3d.py) -->
+script: [plot_3d.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_3d.py)
 
 ```python
 import matplotlib.pyplot as plt
@@ -167,8 +167,8 @@ fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(10, 8))
 
 ### Chinese characters plot
 
-<!-- [plot_zh.py](./examples/plot_zh.py) -->
-[plot_zh.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_zh.py)
+<!-- script: [plot_zh.py](./examples/plot_zh.py) -->
+script: [plot_zh.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_zh.py)
 
 - requirements:
 
@@ -244,8 +244,8 @@ ax.legend(prop={"family": "SimHei"})
 
 - Example 1:
 
-scripts: [phase_stability_Nb3Si_plot.py](./examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py)
-[phase_stability_Nb3Si_plot.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py)
+<!-- script: [phase_stability_Nb3Si_plot.py](./examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py) -->
+script: [phase_stability_Nb3Si_plot.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py)
 
 Figure:
 
@@ -256,8 +256,8 @@ Figure:
 
 - Example 2:
 
-<!-- scripts: [b_fit_cal.py](./examples/fit-cal-b-plot/b_fit_cal.py) -->
-[b_fit_cal.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/fit-cal-b-plot/b_fit_cal.py)
+<!-- script: [b_fit_cal.py](./examples/fit-cal-b-plot/b_fit_cal.py) -->
+script: [b_fit_cal.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/fit-cal-b-plot/b_fit_cal.py)
 
 Figure:
 
