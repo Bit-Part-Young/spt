@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=65.0.0",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spt"
+version = "0.2.2"
+description = "Scientific matplotlib plot rcParams configuration template python package."
+authors = [
+    {name = "yangsl", email = "3304839708@qq.com"},
+]
+maintainers = [
+    {name = "yangsl", email = "3304839708@qq.com"},
+]
+dependencies = [
+    "matplotlib>=3.7,<3.8",
+    "numpy>=1.20.0",
+]
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+[project.optional-dependencies]
+examples = [
+    "pandas",
+    "scikit-learn",
+]
+
+[project.urls]
+documentation = "https://github.com/Bit-Part-Young/spt"
+repository = "https://github.com/Bit-Part-Young/spt"
+
+[tool.setuptools]
+packages = ["find:",
+    "exclude:",
+]
+
+[tool.setuptools.dynamic]
+long-description = {file = "README.md"}
