@@ -1,6 +1,9 @@
 # python cache
 __pycache__/
 
+venv/
+
+
 # temporary files and directories
 tmp/
 test*.py

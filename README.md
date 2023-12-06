@@ -42,6 +42,11 @@ git clone https://github.com/Bit-Part-Young/spt.git
 
 cd spt
 
+# create virtual environment
+python -m venv venv
+# activate virtual environment
+source venv/bin/activate
+
 pip install .
 # or 
 pip install -r requirements.txt
