@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "spt"
-version = "0.2.2"
+version = "0.2.3"
 description = "Scientific matplotlib plot rcParams configuration template python package."
 authors = [
     {name = "yangsl", email = "3304839708@qq.com"},
