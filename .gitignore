@@ -1,8 +1,9 @@
 # python cache
 __pycache__/
 
+virtual environments
 venv/
-
+.venv/
 
 # temporary files and directories
 tmp/
