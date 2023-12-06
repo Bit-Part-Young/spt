@@ -21,7 +21,7 @@ test*.sh
 /examples/*/*.png
 /examples/*/*.jpg
 
-# setup.py
+# package
 dist/
 build/
 *.egg-info/
