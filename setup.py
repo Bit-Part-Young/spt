@@ -28,8 +28,13 @@ setup(
     description="Scientific matplotlib plot rcParams configuration template python package.",
     long_description=long_description,
     long_description_content_type="text/markdown",
+    keywords=[
+        "matplotlib",
+    ],
     author="yangsl",
     author_email="3304839708@qq.com",
+    maintainer="yangsl",
+    maintainer_email="330839708@qq.com",
     url="https://github.com/Bit-Part-Young/spt",
     packages=find_packages(),
     zip_safe=False,
