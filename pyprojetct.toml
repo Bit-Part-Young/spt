@@ -26,6 +26,7 @@ requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
+readme = "README.md"
 
 [project.optional-dependencies]
 examples = [
@@ -38,11 +39,5 @@ Homepage = "https://github.com/Bit-Part-Young/spt"
 documentation = "https://github.com/Bit-Part-Young/spt"
 repository = "https://github.com/Bit-Part-Young/spt"
 
-[tool.setuptools]
-packages = [
-    "find:",
-    "exclude:",
-]
-
-[tool.setuptools.dynamic]
-long-description = {file = "README.md"}
+[tool.setuptools.packages.find]
+include = ["spt"]
