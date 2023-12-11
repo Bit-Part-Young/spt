@@ -9,7 +9,7 @@
 Scientific matplotlib plot rcParams configuration template python package.
 
 - **Repo**: [https://github.com/Bit-Part-Young/spt](https://github.com/Bit-Part-Young/spt)
-- **Full documentation**: [README.md](https://github.com/Bit-Part-Young/spt)
+- **Full Documentation**: [README.md](https://github.com/Bit-Part-Young/spt) / [spt Documentation](https://seekanotherland.xyz/spt/)
 
 ---
 
