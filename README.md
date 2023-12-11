@@ -1,9 +1,13 @@
+# spt
+
+<h4 align="center">
+
 [![CI Status](https://github.com/Bit-Part-Young/spt/actions/workflows/mkdocs-deploy.yml/badge.svg)](https://github.com/Bit-Part-Young/spt/actions/workflows/mkdocs-deploy.yml)
 [![PyPi](https://img.shields.io/pypi/v/spt?logo=pypi&logoColor=white&label=PyPI)](https://pypi.org/project/spt/)
 [![PyPI Downloads](https://img.shields.io/pypi/dm/spt?logo=pypi&logoColor=white&color=blue&label=PyPI%20downloads)](https://pypi.org/project/spt)
 [![Requires Python 3.6+](https://img.shields.io/badge/Python-3.8+-blue.svg?logo=python&logoColor=white)](https://python.org/downloads)
 
-# spt
+</h4>
 
 Scientific matplotlib plot rcParams configuration template python package.
 
