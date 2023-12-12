@@ -1,5 +1,5 @@
-site_name: spt
-site_description: Scientific matplotlib plot rcParams configuration template python package.
+-site_name: spt
+-site_description: Scientific matplotlib plot rcParams configuration template python package.
 copyright: Copyright &copy 2023-2023
 
 
@@ -80,6 +80,14 @@ markdown_extensions:
 # reference: https://github.com/TonyCrane/note/blob/master/mkdocs.yml
 extra_css:
   - css/tasklist.css
+  # 公式渲染
+  - https://cdn.tonycrane.cc/utils/katex.min.css
+
+
+extra_javascript:
+  # 公式渲染
+  - https://cdn.tonycrane.cc/utils/katex.min.js
+  - js/katex.js
 
 
 plugins:
