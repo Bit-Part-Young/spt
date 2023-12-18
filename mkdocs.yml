@@ -1,5 +1,8 @@
--site_name: spt
--site_description: Scientific matplotlib plot rcParams configuration template python package.
+site_name: spt
+site_description: Scientific matplotlib plot rcParams configuration template python package.
+site_url: https://seekanotherland.xyz/spt/
+repo_name: Bit-Part-Young/spt/
+repo_url: https://github.com/Bit-Part-Young/spt/
 copyright: Copyright &copy 2023-2023
 
 
@@ -9,7 +12,13 @@ theme:
   icon: 
     logo: material/notebook-outline
   features:
+    - content.tooltips
+    # 每个文档的顶部显示编辑和查看源码按钮
+    - content.action.edit
+    - content.action.view
     - content.code.annotate
+    - content.code.copy
+    - content.code.select
     - navigation.tracking
     - navigation.tabs
     - navigation.indexes
@@ -39,9 +48,9 @@ extra:
     - name: GitHub
       icon: fontawesome/brands/github
       link: https://github.com/Bit-Part-Young
-    # - name: Home
-    #   icon: fontawesome/solid/house-chimney
-    #   link: https://seekanotherland.xyz/mkdocs-demo/
+    - name: Home
+      icon: fontawesome/solid/house-chimney
+      link: https://seekanotherland.xyz/spt/
 
 
 # Extensions
