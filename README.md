@@ -5,6 +5,14 @@
 [![PyPI Downloads](https://img.shields.io/pypi/dm/spt?logo=pypi&logoColor=white&color=blue&label=PyPI%20downloads)](https://pypi.org/project/spt)
 [![Requires Python 3.6+](https://img.shields.io/badge/Python-3.8+-blue.svg?logo=python&logoColor=white)](https://python.org/downloads)
 
+```txt
+           _
+ ___ _ __ | |_
+/ __| '_ \| __|
+\__ \ |_) | |_
+|___/ .__/ \__|
+    |_|
+```
 
 Scientific matplotlib plot rcParams configuration template python package.
 
