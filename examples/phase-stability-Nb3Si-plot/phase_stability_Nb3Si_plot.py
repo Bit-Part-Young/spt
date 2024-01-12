@@ -33,6 +33,7 @@ def phase_stability_plot():
         )
 
     ax.axhline(0.0, linestyle="--", c="k")
+    ax.set_xticks(x_data, solute_list)
 
     ax.set(
         ylim=(-0.5, 5.0),
@@ -40,7 +41,6 @@ def phase_stability_plot():
         ylabel="$\mathrm{E_{SS}}$ (eV)",
     )
 
-    ax.set_xticks(x_data, solute_list)
     ax.legend(ncols=2, loc="upper left")
 
     figname = "substition_energy_Nb3Si.png"
