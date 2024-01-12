@@ -47,7 +47,7 @@ def phase_stability_plot():
     )
 
     ax.set_xticks(x_data, solute_list)
-    ax.legend()
+    ax.legend(ncols=2, loc="upper left")
 
     fig.savefig("substitution_energy_Nb3Si.png")
 
