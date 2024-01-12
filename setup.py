@@ -24,7 +24,7 @@ requirements = read_requirements(THIS_DIR / "requirements.txt")
 
 setup(
     name="spt",
-    version="0.2.3",
+    version="0.2.4",
     description="Scientific matplotlib plot rcParams configuration template python package.",
     long_description=long_description,
     long_description_content_type="text/markdown",

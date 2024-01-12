@@ -31,8 +31,9 @@ def set_plot_params(
     savefig_dpi: int = 1000,
     figure_dpi: int = 1000,
     savefig_bbox: str = "tight",
-    legend_labelspacing: float = 0.5,
-    legend_handletextpad: float = 0.8,
+    legend_labelspacing: float = 0.3,
+    legend_handletextpad: float = 0.5,
+    legend_columnspacing: float = 0.5,
     legend_frameon: bool = True,
     axes3d_grid: bool = True,
     axes_grid: bool = False,
@@ -70,8 +71,9 @@ def set_plot_params(
         savefig_dpi (int, optional): 图片保存时的分辨率. Defaults: 1000.
         figure_dpi (int, optional): 图片显示时的分辨率. Defaults: 1000.
         savefig_bbox (str, optional): 图片保存时的裁剪方式, "tight" 表示裁剪掉图片周围的空白部分. Defaults: "tight".
-        legend_labelspacing (float, optional): 图例标签间距. Defaults: 0.5.
-        legend_handletextpad (float, optional): 图例标签与图例符号的距离. Defaults: 0.8.
+        legend_labelspacing (float, optional): 图例标签横向间距. Defaults: 0.3.
+        legend_handletextpad (float, optional): 图例标签与图例符号的距离. Defaults: 0.5.
+        legend_columnspacing (float, optional): 图例列间距. Defaults: 0.5.
         legend_frameon (bool, optional): 图例是否显示边框. Defaults: True.
         axes3d_grid (bool, optional): 3D 图是否显示网格线. Defaults: True.
         axes_grid (bool, optional): 2D 图是否显示网格线. Defaults: False.
@@ -123,6 +125,7 @@ def set_plot_params(
         "savefig.bbox": savefig_bbox,
         "legend.labelspacing": legend_labelspacing,
         "legend.handletextpad": legend_handletextpad,
+        "legend.columnspacing": legend_columnspacing,
         "legend.frameon": legend_frameon,
         "axes3d.grid": axes3d_grid,
         "axes.grid": axes_grid,
