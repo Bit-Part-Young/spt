@@ -18,18 +18,12 @@ bar_gap = 0.2
 
 
 def phase_stability_plot():
-    # markers = ["o", "s", "^", "v"]
     solute_list = subs_ene_df.loc[
         subs_ene_df["solute_site"] == "Nb_I", "solute"
     ].tolist()
     x_data = np.arange(len(solute_list)) * 2
 
     for index, equi_site in enumerate(equi_site_list):
-        # point plot
-        # y_data = ene_data.loc[ene_data["solute_site"] == equi_site, "subs_energy(eV)"]
-        # ax.plot(x_data, y_data, markers[index], label=equi_site)
-
-        # bar plot
         y_data = subs_ene_df.loc[subs_ene_df["solute_site"] == equi_site, "subs_energy"]
         ax.bar(
             x_data + bar_width * (index - 2) + bar_gap,
@@ -49,7 +43,8 @@ def phase_stability_plot():
     ax.set_xticks(x_data, solute_list)
     ax.legend(ncols=2, loc="upper left")
 
-    fig.savefig("substitution_energy_Nb3Si.png")
+    figname = "substition_energy_Nb3Si.png"
+    fig.savefig(figname)
 
     print("\nFigure is generated.")
 
