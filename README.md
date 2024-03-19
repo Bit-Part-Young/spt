@@ -26,9 +26,6 @@ Scientific matplotlib plot rcParams configuration template python package.
 - via pip:
 
 ```bash
-pip install spt
-
-# update
 pip install -U spt
 
 # install spt and examples dependencies
@@ -46,15 +43,14 @@ pip install git+https://github.com/Bit-Part-Young/spt.git
 - via source code:
 
 ```bash
-git clone https://gitee.com/yangsl306/spt.git
-# or
 git clone https://github.com/Bit-Part-Young/spt.git
+# or
+git clone https://gitee.com/yangsl306/spt.git
 
 cd spt
 
-# create virtual environment
+# virtual environment
 python -m venv venv
-# activate virtual environment
 source venv/bin/activate
 
 pip install .
@@ -71,6 +67,67 @@ pip install -e .
 
 Full example codes can be found in [examples](https://github.com/Bit-Part-Young/spt/tree/master/examples) folder.
 
+---
+
+### fonts
+
+- **Times New Roman**: Copy `TimesNewRoman*.ttf` fonts to `~/.fonts` or `~/.local/share/fonts` or matplotlib font path in specific conda env, then remove matplotlib cache, `source` to take effect.
+
+```bash
+cp fonts/TimesNewRoman*.ttf ~/.fonts
+# or
+cp fonts/TimesNewRoman*.ttf ~/.local/share/fonts
+# copy to matplotlib font path in specific conda env
+cp fonts/TimesNewRoman*.ttf <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
+
+# remove matplotlib cache
+rm -rf ~/.cache/matplotlib
+
+# check fonts
+fc-list lang:en | grep -i "Times New Roman"
+```
+
+- **Chinese**: Copy `SimHei.ttf` font to `~/.fonts` or `~/.local/share/fonts` or matplotlib font path in specific conda env, backup original matplotlibrc file, copy modified matplotlibrc file to `mpl-data` path, then remove matplotlib cache, `source` to take effect.
+
+```bash
+cp fonts/SimHei.ttf ~/.fonts
+# or
+cp fonts/SimHei.ttf ~/.local/share/fonts
+# copy to matplotlib font path in specific conda env
+cp fonts/SimHei.ttf <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
+
+# backup matplotlibrc file
+cd <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/
+cp matplotlibrc matplotlibrc_origin
+cd -
+
+# copy modified matplotlibrc file
+cp fonts/matplotlibrc <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/
+
+# remove matplotlib cache
+rm -rf ~/.cache/matplotlib
+
+# check fonts
+fc-list lang:zh | grep -i "SimHei"
+```
+
+---
+
+`matplotlibrc` modification:
+
+```bash
+# origin 
+font.family:  sans-serif
+font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
+axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
+
+# modification
+font.family:  sans-serif
+font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif, SimHei, Times New Roman, Times
+axes.unicode_minus: False  # use Unicode for the minus symbol rather than hyphen.  See
+```
+
+---
 ---
 
 ### set_plot_params()
@@ -98,31 +155,15 @@ fig, ax = plt.subplots()
 
 - Figure:
 
-<!-- ![sin.png](./assets/sin.png) -->
-<img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/sin.png" alt="sin.png" />
+![sin.png](./assets/figures/sin.png)
+<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/sin.png" alt="sin.png" /> -->
 
 ---
 
 ### set_roman_plot_params()
 
 <!-- script: [plot_roman.py](./examples/plot_roman.py) -->
-script: [plot_roman.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_roman.py)
-
-- requirements:
-
-To use Times New Roman font, you need to do:
-
-```bash
-# copy roman-ttf fonts to your matplotlib font path in specific conda env
-cp roman-ttf/* <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
-
-# remove matplotlib cache
-rm -rf ~/.cache/matplotlib
-```
-
----
-
-- plot:
+- code snippets (complete script: [plot_roman.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_roman.py)):
 
 ```python
 import matplotlib.pyplot as plt
@@ -142,15 +183,14 @@ fig, ax = plt.subplots()
 
 - Figure:
 
-<!-- ![sin_roman.png](./assets/sin_roman.png) -->
-<img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/sin_roman.png" alt="sin_roman.png" />
+![sin_roman.png](./assets/figures/sin_roman.png)
+<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/sin_roman.png" alt="sin_roman.png" /> -->
 
 ---
 
-- 3d plot:
+- 3d plot code snippets (complete script: [plot_3d.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_3d.py)):
 
 <!-- script: [plot_3d.py](./examples/plot_3d.py) -->
-script: [plot_3d.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_3d.py)
 
 ```python
 import matplotlib.pyplot as plt
@@ -175,55 +215,15 @@ fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(10, 8))
 
 - Figure:
 
-<!-- ![scatter_3d.png](./assets/scatter_3d.png) -->
-<img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/scatter_3d.png" alt="scatter_3d.png" />
+![scatter_3d.png](./assets/figures/scatter_3d.png)
+<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/scatter_3d.png" alt="scatter_3d.png" /> -->
 
 ---
 
 ### Chinese characters plot
 
 <!-- script: [plot_zh.py](./examples/plot_zh.py) -->
-script: [plot_zh.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_zh.py)
-
-- requirements:
-
-To use Chinese(SimHei 黑体) font, you need to do:
-
-```bash
-# copy SimHei-ttf fonts to matplotlib font path in specific conda env
-cp chinese-config/chinese-ttf/* <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/fonts/ttf/
-
-# backup matplotlibrc file
-cd <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/
-cp matplotlibrc matplotlibrc_origin
-cd -
-
-# copy modified matplotlibrc file
-cp chinese-config/matplotlibrc <conda_env>/lib/pythonXXX/site-packages/matplotlib/mpl-data/
-
-# remove matplotlib cache
-rm -rf ~/.cache/matplotlib
-```
-
----
-
-`matplotlibrc` modification:
-
-```bash
-# origin 
-font.family:  sans-serif
-font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif
-axes.unicode_minus: True  # use Unicode for the minus symbol rather than hyphen.  See
-
-# modification
-font.family:  sans-serif
-font.sans-serif: DejaVu Sans, Bitstream Vera Sans, Computer Modern Sans Serif, Lucida Grande, Verdana, Geneva, Lucid, Arial, Helvetica, Avant Garde, sans-serif, SimHei, Times New Roman, Times
-axes.unicode_minus: False  # use Unicode for the minus symbol rather than hyphen.  See
-```
-
----
-
-- plot:
+- code snippets (complete script: [plot_zh.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_zh.py))
 
 ```python
 import matplotlib.pyplot as plt
@@ -250,34 +250,30 @@ ax.legend(prop={"family": "SimHei"})
 
 - Figure
 
-<!-- ![sin_zh.png](./assets/sin_zh.png) -->
-<img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/sin_zh.png" alt="sin_zh.png" />
+![sin_zh.png](./assets/figures/sin_zh.png)
+<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/sin_zh.png" alt="sin_zh.png" /> -->
 
 ---
 
 ## Scientific Figure Examples
 
-- Example 1:
-
+- Example 1 (complete script: [phase_stability_Nb3Si_plot.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py)):
 <!-- script: [phase_stability_Nb3Si_plot.py](./examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py) -->
-script: [phase_stability_Nb3Si_plot.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py)
 
 Figure:
 
-<!-- ![substitution_energy_Nb3Si.png](./assets/substitution_energy_Nb3Si.png) -->
-<img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/substitution_energy_Nb3Si.png" alt="substitution_energy_Nb3Si.png" />
+![substitution_energy_Nb3Si.png](./assets/figures/substitution_energy_Nb3Si.png)
+<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/substitution_energy_Nb3Si.png" alt="substitution_energy_Nb3Si.png" /> -->
 
 ---
 
-- Example 2:
-
+- Example 2 (complete script: [b_fit_cal.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/fit-cal-b-plot/b_fit_cal.py)):
 <!-- script: [b_fit_cal.py](./examples/fit-cal-b-plot/b_fit_cal.py) -->
-script: [b_fit_cal.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/fit-cal-b-plot/b_fit_cal.py)
 
 Figure:
 
-<!-- ![b_fit_cal.png](./assets/b_fit_cal.png) -->
-<img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/b_fit_cal.png" alt="b_fit_cal.png" />
+![b_fit_cal.png](./assets/figures/b_fit_cal.png)
+<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/b_fit_cal.png" alt="b_fit_cal.png" /> -->
 
 ---
 
