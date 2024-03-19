@@ -35,9 +35,9 @@ pip install ".[examples]"
 - via git:
 
 ```bash
-pip install git+https://gitee.com/yangsl306/spt.git
-# or
 pip install git+https://github.com/Bit-Part-Young/spt.git
+# or
+pip install git+https://gitee.com/yangsl306/spt.git
 ```
 
 - via source code:
@@ -128,14 +128,10 @@ axes.unicode_minus: False  # use Unicode for the minus symbol rather than hyphen
 ```
 
 ---
----
 
 ### set_plot_params()
 
-<!-- script: [plot.py](./examples/plot.py) -->
-script: [plot.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot.py)
-
-- plot:
+- code snippets (complete script: [plot.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot.py)):
 
 ```python
 import matplotlib.pyplot as plt
@@ -153,16 +149,14 @@ fig, ax = plt.subplots()
 
 ---
 
-- Figure:
+Figure:
 
 ![sin.png](./assets/figures/sin.png)
-<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/sin.png" alt="sin.png" /> -->
 
 ---
 
 ### set_roman_plot_params()
 
-<!-- script: [plot_roman.py](./examples/plot_roman.py) -->
 - code snippets (complete script: [plot_roman.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_roman.py)):
 
 ```python
@@ -181,16 +175,13 @@ fig, ax = plt.subplots()
 
 ---
 
-- Figure:
+Figure:
 
 ![sin_roman.png](./assets/figures/sin_roman.png)
-<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/sin_roman.png" alt="sin_roman.png" /> -->
 
 ---
 
 - 3d plot code snippets (complete script: [plot_3d.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_3d.py)):
-
-<!-- script: [plot_3d.py](./examples/plot_3d.py) -->
 
 ```python
 import matplotlib.pyplot as plt
@@ -213,16 +204,14 @@ fig, ax = plt.subplots(subplot_kw={"projection": "3d"}, figsize=(10, 8))
 
 ---
 
-- Figure:
+Figure:
 
 ![scatter_3d.png](./assets/figures/scatter_3d.png)
-<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/scatter_3d.png" alt="scatter_3d.png" /> -->
 
 ---
 
 ### Chinese characters plot
 
-<!-- script: [plot_zh.py](./examples/plot_zh.py) -->
 - code snippets (complete script: [plot_zh.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/plot_zh.py))
 
 ```python
@@ -248,32 +237,27 @@ ax.legend(prop={"family": "SimHei"})
 
 ---
 
-- Figure
+Figure
 
 ![sin_zh.png](./assets/figures/sin_zh.png)
-<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/sin_zh.png" alt="sin_zh.png" /> -->
 
 ---
 
 ## Scientific Figure Examples
 
 - Example 1 (complete script: [phase_stability_Nb3Si_plot.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py)):
-<!-- script: [phase_stability_Nb3Si_plot.py](./examples/phase-stability-Nb3Si-plot/phase_stability_Nb3Si_plot.py) -->
 
 Figure:
 
 ![substitution_energy_Nb3Si.png](./assets/figures/substitution_energy_Nb3Si.png)
-<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/substitution_energy_Nb3Si.png" alt="substitution_energy_Nb3Si.png" /> -->
 
 ---
 
 - Example 2 (complete script: [b_fit_cal.py](https://github.com/Bit-Part-Young/spt/blob/master/examples/fit-cal-b-plot/b_fit_cal.py)):
-<!-- script: [b_fit_cal.py](./examples/fit-cal-b-plot/b_fit_cal.py) -->
 
 Figure:
 
 ![b_fit_cal.png](./assets/figures/b_fit_cal.png)
-<!-- <img src="https://raw.githubusercontent.com/Bit-Part-Young/spt/master/assets/b_fit_cal.png" alt="b_fit_cal.png" /> -->
 
 ---
 
