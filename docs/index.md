@@ -71,7 +71,7 @@ Full example codes can be found in [examples](https://github.com/Bit-Part-Young/
 
 ### fonts
 
-- **Times New Roman**: Copy `TimesNewRoman*.ttf` fonts to `~/.fonts` or `~/.local/share/fonts` or matplotlib font path in specific conda env, then remove matplotlib cache, `source` to take effect.
+- **Times New Roman**: Copy `TimesNewRoman*.ttf` fonts to `~/.fonts` or `~/.local/share/fonts` or matplotlib font path in specific conda env, then remove matplotlib cache, relogin.
 
 ```bash
 cp fonts/TimesNewRoman*.ttf ~/.fonts
@@ -87,7 +87,7 @@ rm -rf ~/.cache/matplotlib
 fc-list lang:en | grep -i "Times New Roman"
 ```
 
-- **Chinese**: Copy `SimHei.ttf` font to `~/.fonts` or `~/.local/share/fonts` or matplotlib font path in specific conda env, backup original matplotlibrc file, copy modified matplotlibrc file to `mpl-data` path, then remove matplotlib cache, `source` to take effect.
+- **Chinese**: Copy `SimHei.ttf` font to `~/.fonts` or `~/.local/share/fonts` or matplotlib font path in specific conda env, backup original matplotlibrc file, copy modified matplotlibrc file to `mpl-data` path, then remove matplotlib cache, relogin.
 
 ```bash
 cp fonts/SimHei.ttf ~/.fonts
