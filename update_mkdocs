@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# 更新 mkdocs 中的 index.md 文档和图片
+
+readmd_fn="README.md"
+assets_dn="assets"
+mkdocs_content_dn="docs"
+
+if [[ -f ${readmd_fn} ]]; then
+    cp ${readmd_fn} ${mkdocs_content_dn}/index.md
+fi
+
+if [[ -d ${assets_dn} ]]; then
+    cp -r ${assets_dn} ${mkdocs_content_dn}
+fi
+
+
+git_update(){
+    BRANCH=$(git branch --show-current)
+    git status --short --branch
+    echo
+    git add ${mkdocs_content_dn}
+    git commit -m "update mkdocs contents"
+    echo
+}
+
+
+update_num(){
+    update_md_num=$(git status --short --branch | grep "docs/" | wc -l)
+
+    if [[ $update_md_num -eq 0 ]]; then
+        echo -e "\ndocs content is latest."
+    else
+        echo -e "\ndocs content is updated."
+        git_update
+    fi
+
+    cd - > /dev/null 2>&1 
+}
+
+
+update_num
